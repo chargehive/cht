@@ -8,8 +8,11 @@ const (
 	Bank     InstrumentType = "bank"
 	Voucher  InstrumentType = "voucher"
 	BNPL     InstrumentType = "bnpl"
-	Phone    InstrumentType = "phone"
+	Carrier  InstrumentType = "carrier" // Phone Bill
 	Redirect InstrumentType = "redirect"
+	Crypto   InstrumentType = "crypto"
+	Cash     InstrumentType = "cash"
+	Store    InstrumentType = "store"
 )
 
 type InstrumentSource string
@@ -45,19 +48,28 @@ const (
 
 	// Bank Redirects
 
-	//BanContact InstrumentSource = "bancontact"
-	//EPS        InstrumentSource = "eps"
-	//IDEAL      InstrumentSource = "ideal"
-	//Przelewy24 InstrumentSource = "p24"
-	//TWINT      InstrumentSource = "twint"
-	//Sofort     InstrumentSource = "sofort"
+	BanContact InstrumentSource = "bancontact"
+	EPS        InstrumentSource = "eps"
+	IDEAL      InstrumentSource = "ideal"
+	Przelewy24 InstrumentSource = "p24"
+	TWINT      InstrumentSource = "twint"
+	Sofort     InstrumentSource = "sofort"
 
 	// Vouchers & Gift Cards
 
-	//MultiBanco InstrumentSource = "multibanco"
+	MultiBanco InstrumentSource = "multibanco"
 
 	// Buy Now Pay Later
 
 	Klarna   InstrumentSource = "klarna"
 	Afterpay InstrumentSource = "afterpay"
+
+	// Crypto
+
+	Coinbase InstrumentSource = "coinbase"
+
+	// Store
+
+	GooglePlay InstrumentSource = "google-play"
+	AppleStore InstrumentSource = "apple-store"
 )
