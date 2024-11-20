@@ -1,6 +1,6 @@
 package capability
 
-type Capability uint8
+type Capability uint32
 
 const (
 	TransmitPan           Capability = 1 // Card Holder Data
@@ -32,4 +32,9 @@ const (
 	External3DS       = 65 // Allows external 3ds
 
 	RiskAnalysis = 70
+
+	AccountUpdater         = 80
+	InlineAccountUpdater   = 81
+	RealTimeAccountUpdater = 82
+	BatchAccountUpdater    = 83
 )
