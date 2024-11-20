@@ -3,12 +3,13 @@ package cht
 type InstrumentType string
 
 const (
-	Card    InstrumentType = "card"
-	Wallet  InstrumentType = "wallet"
-	Bank    InstrumentType = "bank"
-	Voucher InstrumentType = "voucher"
-	BNPL    InstrumentType = "bnpl"
-	Phone   InstrumentType = "phone"
+	Card     InstrumentType = "card"
+	Wallet   InstrumentType = "wallet"
+	Bank     InstrumentType = "bank"
+	Voucher  InstrumentType = "voucher"
+	BNPL     InstrumentType = "bnpl"
+	Phone    InstrumentType = "phone"
+	Redirect InstrumentType = "redirect"
 )
 
 type InstrumentSource string
